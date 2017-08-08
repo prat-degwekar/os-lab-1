@@ -5,11 +5,11 @@ using namespace std;
 
 int main()
 {
-	process p1(4 , 2 , "001");
-	process p2( 2 , 5 , "002");
-	process p3(0 , 3 , "003");
-	process p4(1 , 4 , "004");
-	process p5(3 , 1 , "005");
+	process p5(4 , 2 , "001");	//at , bt , pid
+	process p3( 2 , 5 , "002");
+	process p1(0 , 3 , "003");
+	process p2(1 , 4 , "004");
+	process p4(3 , 1 , "005");
 
 	cout<< ((0<=0)) ? "0" : "1";
 
@@ -23,7 +23,7 @@ int main()
 
 	cout<<"first completion time = "<<p[0].getct()<<"\n\n\n";
 
-	sjf( p , 5 );
+	rr( p , 5 );
 	print_process( p , 5 );
 
 	return 0;

@@ -19,7 +19,7 @@ void sjf( process p[] , int n )
 				continue;*/
 
 			if( p[j].getat() <= curt && p[j].getct() < 0 )
-			{
+			{	
 				//cout<<"in \n";
 
 				if(p[j].getbt() == minbt )

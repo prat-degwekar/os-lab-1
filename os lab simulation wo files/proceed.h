@@ -100,3 +100,7 @@ void fcfs( process[] , int );
 void sjf( process[] , int );
 
 void print_process( process[] , int );
+
+void srt( process[] , int );
+
+void rr( process[] , int );
