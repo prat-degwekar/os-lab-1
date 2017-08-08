@@ -3,14 +3,14 @@
 
 using namespace std;
 
-void sjf( process p[] , int n )
+void prnp( process p[] , int n )
 {
 	int curt = 0; 
 	for(int i=0 ; i<n ; i++)
 	{
 		//assumed first process comes in at 0
 
-		int minbt = 9;
+		int maxpr = 0;
 		int ind = 0;
 
 		for(int j=0 ; j<n ; j++)
@@ -22,7 +22,7 @@ void sjf( process p[] , int n )
 			{	
 				//cout<<"in \n";
 
-				if(p[j].getbt() == minbt )
+				if(p[j].getpr() == maxpr )
 				{
 					if(p[j].getat() < p[ind].getat())
 					{
@@ -30,9 +30,9 @@ void sjf( process p[] , int n )
 					}
 				}
 
-				else if(p[j].getbt() < minbt )
+				else if(p[j].getpr() > maxpr )
 				{
-					minbt = p[j].getbt();
+					maxpr = p[j].getpr();
 					ind = j;
 					//cout<<"came here once";
 				}
