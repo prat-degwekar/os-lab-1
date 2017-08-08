@@ -30,6 +30,7 @@ public:
 		bt = bbt;
 		pid = bpid;
 		ct = -1;
+		wt = 0;
 	}
 
 	int getat()
@@ -72,6 +73,11 @@ public:
 		bt = bbt;
 	}
 
+	void setwt(int bwt)
+	{
+		wt = bwt;
+	}
+
 	void setct(int bct)
 	{
 		ct = bct;
@@ -104,3 +110,5 @@ void print_process( process[] , int );
 void srt( process[] , int );
 
 void rr( process[] , int );
+
+void hrr( process[] , int );
