@@ -14,6 +14,7 @@ private:
 	string pid;
 	int bt;
 	int wt;
+	int pr;
 
 public:
 
@@ -24,13 +25,14 @@ public:
 		ct = -1;
 	}
 
-	process(int bat , int bbt , string bpid)
+	process(int bat , int bbt , int bpr , string bpid)
 	{
 		at = bat;
 		bt = bbt;
 		pid = bpid;
 		ct = -1;
 		wt = 0;
+		pr = bpr;
 	}
 
 	int getat()
@@ -46,6 +48,11 @@ public:
 	int getwt()
 	{
 		return wt;
+	}
+
+	int getpr()
+	{
+		return pr;
 	}
 
 	int gettat()
@@ -94,6 +101,11 @@ public:
 		wt = ct - bt;
 	}
 
+	void setpr( int bpr )
+	{
+		pr = bpr;
+	}
+
 	void setpid(string bpid)
 	{
 		pid = bpid;
@@ -112,3 +124,5 @@ void srt( process[] , int );
 void rr( process[] , int );
 
 void hrr( process[] , int );
+
+void prp( process[] , int );
