@@ -23,7 +23,11 @@ int main()
 
 	cout<<"first completion time = "<<p[0].getct()<<"\n\n\n";
 
+<<<<<<< HEAD
 	prnp( p , 5 );
+=======
+	exc( p , 5 );
+>>>>>>> 3a290482fe65b6ed1a5c32ac6993d24a97a3c75b
 	print_process( p , 5 );
 
 	return 0;

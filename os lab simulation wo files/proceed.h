@@ -128,3 +128,5 @@ void hrr( process[] , int );
 void prp( process[] , int );
 
 void prnp( process[] , int );
+
+void exc( process[] , int );
