@@ -23,7 +23,7 @@ int main()
 
 	cout<<"first completion time = "<<p[0].getct()<<"\n\n\n";
 
-	prp( p , 5 );
+	prnp( p , 5 );
 	print_process( p , 5 );
 
 	return 0;
