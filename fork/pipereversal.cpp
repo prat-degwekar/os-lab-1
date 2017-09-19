@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 
         val = 250;
 
-        char buff[15] = "iamg";
+        char buff[15] = "malayalam";
 
         write(fd[1], buff, sizeof(buff));
 
