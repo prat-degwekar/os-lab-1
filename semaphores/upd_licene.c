@@ -3,6 +3,7 @@
 #include <semaphore.h>
 //#include <sleep.h>
 #include <unistd.h>
+#include <stdlib.h>
 
 #define N 20
 
@@ -51,6 +52,7 @@ void* request( void *params )
 	{
 		checkout( val );
 		sleep( 0 );
+		system("ls");
 		release( val );
 		sleep(1);
 	}
