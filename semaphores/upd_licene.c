@@ -52,7 +52,10 @@ void* request( void *params )
 	{
 		checkout( val );
 		sleep( 0 );
-		system("ls");
+		//system("ls");
+		int k = random()%20000;
+		//system( "cowthink " + k );
+		system("fortune");
 		release( val );
 		sleep(1);
 	}
@@ -63,7 +66,7 @@ int main()
 	int i , n;
 
 	printf("enter number of licences : ");
-	scanf( "%d\n" , &n );
+	scanf( "%d" , &n );
 
 	int tnum[N];
 
